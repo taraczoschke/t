@@ -145,15 +145,18 @@ $("#sentiment button").each(function() {
             var bgColorClass = $(this).data("bgcolor-class");
             $(this).removeClass(bgColorClass);
         }
-    }).on("click", function() {
-        $(this).toggleClass("clicked scaled");
     }).on("dblclick", function() {
-        $(this).removeClass("clicked scaled");
         var bgColorClass = $(this).data("bgcolor-class");
         $(this).removeClass(bgColorClass);
     });
 });
 
+
+$("nav button").on("click", function() {
+        $(this).toggleClass("clicked scaled");
+    }).on("dblclick", function() {
+        $(this).removeClass("clicked scaled");
+    });
 
 
 

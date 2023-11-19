@@ -100,8 +100,7 @@ nav {
 }
 
 .sub-nav-container {
-  gap: 1rem
-
+  gap: 1rem;
 }
 
 
@@ -118,6 +117,7 @@ nav button {
     background-color:var(--black);
     text-transform: uppercase;
     font-size: var(--fs-400);
+    font-weight: var(--fw-500);
 }
 
 .sub-nav-container button {
@@ -137,6 +137,17 @@ nav button:not(.clicked):hover {
     transition: transform 0.3s ease-in-out;
 
 }
+
+#country button:hover, #topic button:hover {
+  background-color: var(--accent);
+}
+
+nav button:not(.clicked):hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+
+}
+
 
 .card-container {
   display: grid;
